@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thryffy Vendor Outreach Playbook</title>
+  <style>
+    :root { --ink:#1f2937; --muted:#667085; --brand:#7c3aed; --brand-dark:#5b21b6; --soft:#f5f3ff; --line:#e5e7eb; --bg:#fafafa; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:var(--bg); }
+    header { padding:54px max(24px, calc((100% - 1060px)/2)); background:linear-gradient(125deg,#4c1d95,#8b5cf6 57%,#c4b5fd); color:#fff; }
+    h1 { margin:0 0 10px; font-size:clamp(2rem,5vw,3.35rem); letter-spacing:-.045em; }
+    header p { max-width:700px; margin:0; font-size:1.08rem; line-height:1.6; color:#f5f3ff; }
+    main { width:min(1060px, calc(100% - 36px)); margin:34px auto 70px; }
+    .intro { background:#fff; border:1px solid var(--line); border-radius:18px; padding:22px; line-height:1.65; box-shadow:0 8px 22px rgb(17 24 39 / .04); }
+    .tip { display:flex; gap:12px; align-items:flex-start; margin-top:16px; padding:15px 17px; border-radius:12px; background:var(--soft); color:#4c1d95; }
+    .tip strong { white-space:nowrap; }
+    h2 { margin:45px 0 16px; font-size:1.45rem; letter-spacing:-.02em; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    .card { display:flex; flex-direction:column; background:#fff; border:1px solid var(--line); border-radius:18px; padding:21px; box-shadow:0 8px 22px rgb(17 24 39 / .04); }
+    .number { width:31px; height:31px; display:grid; place-items:center; border-radius:50%; font-size:.82rem; font-weight:800; color:#fff; background:var(--brand); }
+    h3 { margin:13px 0 7px; font-size:1.06rem; }
+    .description { min-height:42px; margin:0 0 15px; color:var(--muted); font-size:.91rem; line-height:1.45; }
+    textarea { width:100%; min-height:220px; resize:vertical; border:1px solid #d1d5db; border-radius:11px; background:#fffeff; padding:13px; color:var(--ink); font:14px/1.55 Inter, ui-sans-serif, system-ui, sans-serif; outline:none; }
+    textarea:focus { border-color:var(--brand); box-shadow:0 0 0 3px rgb(124 58 237 / .14); }
+    .actions { display:flex; align-items:center; gap:10px; margin-top:12px; }
+    button { border:0; border-radius:9px; padding:10px 14px; background:var(--brand); color:#fff; font:700 .88rem Inter, sans-serif; cursor:pointer; }
+    button:hover { background:var(--brand-dark); }
+    .status { color:var(--muted); font-size:.84rem; }
+    .do-not { margin-top:20px; padding:21px; border-radius:17px; background:#fff; border:1px solid var(--line); }
+    .do-not h3 { margin:0 0 11px; }.do-not ul { margin:0; padding-left:20px; line-height:1.8; color:#475467; }
+    .checklist { margin-top:26px; padding:23px; border:1px solid var(--line); border-radius:18px; background:#fff; box-shadow:0 8px 22px rgb(17 24 39 / .04); }
+    .checklist-head { display:flex; justify-content:space-between; gap:14px; align-items:flex-start; }
+    .checklist h2 { margin:0 0 5px; }.checklist p { margin:0; color:var(--muted); line-height:1.5; }
+    .reset { background:#f3f4f6; color:#374151; }.reset:hover { background:#e5e7eb; }
+    .checks { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 22px; margin-top:19px; }
+    .check { display:flex; gap:10px; align-items:flex-start; padding:10px 2px; color:#344054; line-height:1.4; cursor:pointer; }
+    .check input { width:18px; height:18px; flex:0 0 18px; accent-color:var(--brand); cursor:pointer; }
+    footer { text-align:center; padding-top:35px; color:var(--muted); font-size:.88rem; }
+    @media (max-width:720px) { .grid,.checks { grid-template-columns:1fr; } header { padding:38px 24px; } main { width:min(100% - 28px,1060px); } .checklist-head { display:block; }.reset{ margin-top:12px; } }
+    @media print { body { background:#fff; } header { padding:25px; } main { width:100%; margin:20px 0; } .grid { grid-template-columns:1fr; } button,.status { display:none; } .card { break-inside:avoid; box-shadow:none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vendor Outreach Playbook</h1>
+    <p>Personal, friendly templates for inviting new businesses to the Thryffy community. Edit the words in each box, then copy and paste them directly into WhatsApp, Instagram, or email.</p>
+  </header>
+  <main>
+    <section class="intro">
+      <strong>How to use this page:</strong> Replace anything in [square brackets] with the vendor's details. Before messaging, look at their page and mention one genuine thing you like about their business. That small personal touch makes the invitation feel intentional.
+      <div class="tip"><strong>Quick reminder:</strong><span>Lead with interest in their business, then explain why Thryffy could help them grow—not just that a booth is available.</span></div>
+    </section>
+    <section class="checklist">
+      <div class="checklist-head"><div><h2>Vendor Contact Checklist</h2><p>Tick what applies before sending the first message. Your selections will stay saved on this device.</p></div><button class="reset" type="button">Clear checklist</button></div>
+      <div class="checks">
+        <label class="check"><input type="checkbox" data-check="reviewed"><span>I have looked through the vendor's social-media page or website.</span></label>
+        <label class="check"><input type="checkbox" data-check="suitable"><span>Their products are suitable for a Thryffy marketplace event.</span></label>
+        <label class="check"><input type="checkbox" data-check="personal"><span>I found one genuine, specific thing to mention about their business.</span></label>
+        <label class="check"><input type="checkbox" data-check="benefit"><span>I know which Thryffy benefit is most relevant to them.</span></label>
+        <label class="check"><input type="checkbox" data-check="sme"><span>I have checked whether the SME discount may apply.</span></label>
+        <label class="check"><input type="checkbox" data-check="details"><span>I have the correct event date, fee, and booth details ready if they ask.</span></label>
+        <label class="check"><input type="checkbox" data-check="message"><span>I personalised the first message before sending it.</span></label>
+        <label class="check"><input type="checkbox" data-check="record"><span>I recorded their response and any required follow-up.</span></label>
+      </div>
+    </section>
+    <h2>Copy-and-edit templates</h2>
+    <section class="grid">
+      <article class="card"><span class="number">1</span><h3>First outreach</h3><p class="description">Use this for the very first message.</p><textarea aria-label="First outreach">Hi [Vendor Name], we came across your business and really liked your [specific product/content].
+
+We are Thryffy, a marketplace community that supports local entrepreneurs by giving them a platform to showcase their businesses through our events and advertising opportunities.
+
+We feel that [Business Name] could be a great fit for our community, especially because [personal reason]. Joining Thryffy can help you introduce your products to new customers, build brand awareness, and connect with more people in Brunei.
+
+We also offer an SME discount for eligible local businesses. Would you be interested in receiving more information about our upcoming event?</textarea><div class="actions"><button>Copy message</button><span class="status"></span></div></article>
+      <article class="card"><span class="number">2</span><h3>They want more information</h3><p class="description">Send when they reply asking for details.</p><textarea aria-label="More information">Hi [Vendor Name], thank you for your interest!
+
+Thryffy provides a space for local businesses to showcase and sell their products during our marketplace events at [venue/location]. We also support participating vendors through our social-media and advertising platforms to help increase awareness for their business.
+
+For eligible SMEs, we also provide a special SME discount.
+
+Our upcoming event is on [date], and the vendor fee starts from [price/discounted price]. If you are interested, we would be happy to share the available booth options, event details, and registration process with you.</textarea><div class="actions"><button>Copy message</button><span class="status"></span></div></article>
+      <article class="card"><span class="number">3</span><h3>Why should they join?</h3><p class="description">Use when a vendor is unsure about the value.</p><textarea aria-label="Why join">We believe Thryffy can be a good opportunity for [Business Name] because it gives you a physical platform to meet customers directly and let more people discover your products.
+
+Besides selling during the event, it is also a chance to build awareness for your brand, gain customer feedback, promote new products, and become part of a growing local entrepreneur community. We feel your [product/business type] would attract visitors at our marketplace.</textarea><div class="actions"><button>Copy message</button><span class="status"></span></div></article>
+      <article class="card"><span class="number">4</span><h3>SME discount explanation</h3><p class="description">Use when they ask about eligibility or the discount.</p><textarea aria-label="SME discount">Yes, we do provide an SME discount for eligible local businesses as part of our effort to support entrepreneurs in Brunei.
+
+The discount is intended to make it easier for small businesses to join our events, gain exposure, and grow their customer base through the Thryffy platform. We can help check your eligibility and share the discounted vendor rate with you.</textarea><div class="actions"><button>Copy message</button><span class="status"></span></div></article>
+      <article class="card"><span class="number">5</span><h3>Follow-up</h3><p class="description">Send after 3–5 days if they have not replied.</p><textarea aria-label="Follow-up">Hi [Vendor Name], just following up on our previous message.
+
+We are still interested in having [Business Name] join the Thryffy community, as we feel your [specific product/business type] could be a lovely addition to our upcoming marketplace.
+
+If you would like, we can send you the event details and SME discount information for you to have a look at. No pressure at all—just let us know if you are interested!</textarea><div class="actions"><button>Copy message</button><span class="status"></span></div></article>
+      <article class="card"><span class="number">6</span><h3>They are interested</h3><p class="description">Move the conversation toward a booking.</p><textarea aria-label="Interested reply">That is great to hear—thank you, [Vendor Name]!
+
+We would be happy to have [Business Name] join us. The next step is for us to share the available booth options, pricing, event date, and registration details with you.
+
+Please let us know which type of products you are planning to sell, and we can recommend a suitable space for your business.</textarea><div class="actions"><button>Copy message</button><span class="status"></span></div></article>
+      <article class="card"><span class="number">7</span><h3>They need time to think</h3><p class="description">Keep the door open without pressure.</p><textarea aria-label="Needs time">Of course, no problem at all! Please take your time to consider it.
+
+We understand that joining an event is an important decision for your business. We can send you the full details, including the event date, booth options, pricing, and SME discount, so you can review everything first.
+
+Feel free to reach out whenever you are ready or if you have any questions.</textarea><div class="actions"><button>Copy message</button><span class="status"></span></div></article>
+      <article class="card"><span class="number">8</span><h3>They decline</h3><p class="description">End warmly and maintain a future connection.</p><textarea aria-label="Decline reply">Thank you for letting us know, [Vendor Name]. We completely understand and appreciate your time.
+
+We would still love to stay connected with [Business Name], and we hope there may be an opportunity to work together for a future Thryffy event. Wishing your business continued growth and success!</textarea><div class="actions"><button>Copy message</button><span class="status"></span></div></article>
+    </section>
+    <section class="do-not"><h3>Before you press send</h3><ul><li>Do not send the same copied message without personalising it.</li><li>Do not lead with price or pressure them to decide immediately.</li><li>Do not promise guaranteed sales or customer numbers.</li><li>Do not keep following up if they have clearly declined.</li></ul></section>
+    <footer>Thryffy • Vendor outreach made personal</footer>
+  </main>
+  <script>
+    document.querySelectorAll('.card').forEach(card => {
+      const button = card.querySelector('button'); const field = card.querySelector('textarea'); const status = card.querySelector('.status');
+      button.addEventListener('click', async () => { try { await navigator.clipboard.writeText(field.value); status.textContent = 'Copied!'; setTimeout(() => status.textContent = '', 1800); } catch { field.select(); document.execCommand('copy'); status.textContent = 'Copied!'; setTimeout(() => status.textContent = '', 1800); } });
+    });
+    const checks = document.querySelectorAll('[data-check]');
+    checks.forEach(check => { check.checked = localStorage.getItem('thryffy-' + check.dataset.check) === 'true'; check.addEventListener('change', () => localStorage.setItem('thryffy-' + check.dataset.check, check.checked)); });
+    document.querySelector('.reset').addEventListener('click', () => checks.forEach(check => { check.checked = false; localStorage.removeItem('thryffy-' + check.dataset.check); }));
+  </script>
+</body>
+</html>
